@@ -1,0 +1,242 @@
+/* Reset e Base - Vibe Charlie e Lola */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Fonte legível para texto */
+    line-height: 1.6;
+    color: #4A4A4A; /* Cinza suave */
+    background-color: #FFF8DC; /* Off-white sonhador */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar - Azul claro como Charlie */
+.navbar {
+    background-color: #A7C7E7; /* Azul pastel */
+    color: #2C3E50; /* Texto escuro suave */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(167, 199, 231, 0.3); /* Sombra fofa */
+    border-bottom: 3px solid #FFB6C1; /* Borda rosa sutil */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 20px;
+}
+
+.logo h2 {
+    font-family: 'Fredoka One', cursive; /* Fonte divertida para logo */
+    font-size: 1.8em;
+    color: #2C3E50;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin-left: 2rem;
+}
+
+.nav-menu a {
+    color: #2C3E50;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.3s;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.nav-menu a:hover {
+    color: #FFB6C1; /* Rosa no hover */
+    transform: scale(1.05); /* Leve bounce */
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #2C3E50;
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+/* Hero - Gradiente pastéis */
+.hero {
+    background: linear-gradient(135deg, rgba(167, 199, 231, 0.8), rgba(255, 182, 193, 0.8)), url('https://source.unsplash.com/1200x600/?technology,fair');
+    background-size: cover;
+    background-position: center;
+    color: #2C3E50;
+    text-align: center;
+    padding: 150px 0 100px;
+    border-bottom: 5px solid #98FB98; /* Verde menta na base */
+}
+
+.hero h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 3.5em;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* Sombra fofa */
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+/* Botões - Rosa e amarelo arredondados */
+.btn {
+    display: inline-block;
+    background: #FFB6C1; /* Rosa como Lola */
+    color: #2C3E50;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px; /* Muito arredondado */
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-family: 'Fredoka One', cursive;
+    box-shadow: 0 4px 8px rgba(255, 182, 193, 0.3);
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #FF69B4; /* Rosa mais vibrante */
+    transform: translateY(-3px); /* Bounce leve */
+    box-shadow: 0 6px 12px rgba(255, 182, 193, 0.4);
+}
+
+.btn-primary {
+    background: #98FB98 !important; /* Verde menta para inscrição */
+}
+
+.btn-primary:hover {
+    background: #7CFC00 !important;
+}
+
+/* Seções Gerais - Bordas arredondadas e sombras fofas */
+.section {
+    padding: 80px 0;
+    background: #FFFACD; /* Amarelo claro para seções */
+    margin: 20px 0;
+    border-radius: 25px; /* Arredondado como nuvens */
+    box-shadow: 0 8px 20px rgba(167, 199, 231, 0.2);
+}
+
+.section h2 {
+    text-align: center;
+    color: #A7C7E7; /* Azul pastel */
+    margin-bottom: 2rem;
+    font-size: 2.8em;
+    font-family: 'Fredoka One', cursive;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.text-content p {
+    margin-bottom: 1rem;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+.image-content img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.image-content img:hover {
+    transform: scale(1.02); /* Leve zoom fofo */
+}
+
+/* Destaque para Data - Amarelo vibrante */
+.data-highlight {
+    background: #FFFACD; /* Amarelo claro */
+    color: #FF6B35; /* Laranja suave para texto */
+    padding: 20px 40px;
+    border-radius: 50px;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1rem auto;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(255, 252, 205, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-family: 'Fredoka One', cursive;
+    border: 3px dashed #FFB6C1; /* Borda tracejada lúdica */
+}
+
+.data-highlight.small {
+    font-size: 1.4em;
+    max-width: 350px;
+    padding: 15px 25px;
+}
+
+.data-highlight i {
+    font-size: 1.5em;
+    color: #A7C7E7;
+}
+
+/* Mapa (Foto) - Container arredondado */
+.map-container {
+    margin: 2rem 0;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(167, 199, 231, 0.2);
+    display: flex;
+    justify-content: center;
+}
+
+.map-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 25px;
+}
+
+/* Programação - Tabela com bordas suaves */
+.program-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(255, 182, 193, 0.2);
+}
+
+.program-table th, .program-table td {
+    padding: 15px;
+    text-align: left;
+}
